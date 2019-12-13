@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="-)%8UE2f8R$Ck`9qiL[-">mySprite</variable><variable id="=y=*ZDC^IyUI8/[o|`qB">randomSprite</variable><variable id="k?_+O0.(uohOiWN|HJyN">Krampus</variable><variable type="KIND_SpriteKind" id="lyNj+ZRs#ridv((cJba(">Player</variable><variable type="KIND_SpriteKind" id="(@$(]COrc+6?i-xahPx4">Projectile</variable><variable type="KIND_SpriteKind" id="+8-HMNRIZ4DcFeoogcR)">Food</variable><variable type="KIND_SpriteKind" id="un@@TakBNqcM*=sBO(SZ">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">13</field></shadow></value><next><block type="variables_set"><field name="VAR" id="=y=*ZDC^IyUI8/[o|`qB">randomSprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . 5 5 5 5 . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . 5 7 7 5 . . . . . . 
+. . . . . . 7 8 7 7 . . . . . . 
+. . . . . 7 7 7 7 a 7 . . . . . 
+. . . . . 7 2 7 7 8 7 . . . . . 
+. . . . 7 7 a 7 7 7 a 7 . . . . 
+. . . . 8 7 7 8 7 7 7 7 . . . . 
+. . . . 7 7 2 7 7 2 7 a . . . . 
+4 . 4 7 7 a 7 7 7 7 7 7 7 4 . 4 
+2 4 2 2 8 7 a 7 7 7 7 8 7 8 4 8 
+2 4 2 7 7 7 7 7 8 7 a 7 2 8 4 8 
+2 2 2 . . . . e e . . . . 8 8 8 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="=y=*ZDC^IyUI8/[o|`qB">randomSprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">134</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">29</field></shadow></value><next><block type="variables_set"><field name="VAR" id="k?_+O0.(uohOiWN|HJyN">Krampus</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . 2 2 2 2 2 2 2 . . 
+. . . . . . 2 2 2 2 2 2 2 2 . . 
+. . . . . . 2 2 2 . . 2 2 2 2 1 
+. . . . . d f d d d . . . . 1 1 
+. . . . . d d d d d . . . . . . 
+. . . . . f f f d d f . . . . . 
+. . . . . d d f d d b b b . . . 
+. . . . . d d d d d f 2 2 b . . 
+. . . . . . f f f f f b 2 2 b . 
+. . f f f f f f f f f f b 2 2 b 
+. f f . . . f f f f f f b b b 2 
+. f . . . . f f f f f f b b b b 
+. . . . . . f f f f f f b 2 b b 
+. . . . . . f f f f f f b b 2 b 
+. . . . . . f f f f f f . b b 2 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text"><field name="TEXT">"This is my Krampus Game"</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block><block type="keyonevent" x="20" y="320"><field name="button">controller.anyButton</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="=y=*ZDC^IyUI8/[o|`qB">randomSprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="k?_+O0.(uohOiWN|HJyN">Krampus</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value></block></next></block></statement></block><block type="variables_get" disabled="true" x="132" y="468"><field name="VAR" id="=y=*ZDC^IyUI8/[o|`qB">randomSprite</field></block><block type="spritesoverlap" x="0" y="500"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Enemy</field></shadow></value><statement name="HANDLER"><block type="spritedestroy"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="=y=*ZDC^IyUI8/[o|`qB">randomSprite</field></block></value><next><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text"><field name="TEXT">No more Christmas</field></shadow></value><next><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">11</field></shadow></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="k?_+O0.(uohOiWN|HJyN">Krampus</field></block></value><value name="text"><shadow type="text"><field name="TEXT">Hahahahaha</field></shadow></value></block></next></block></next></block></next></block></statement></block></xml>
